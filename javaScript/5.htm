@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>JS Slider</title>
+		<style>
+			body {
+				background: silver;
+				margin: 0;
+			}
+			#slider {
+				width: 800px;
+				height: 600px;
+				margin: 50px auto;
+				box-shadow: 1px 1px 10px black;
+				background: white;
+				position: relative; 
+			}
+			#slider > div {
+				width: 40px;
+				height: 40px;
+				background: red;
+				color: white;
+				border-radius: 50%;
+				border: 1px solid white;
+				font: bold 2em Arial;
+				text-align: center;
+				position: absolute;
+				top: 300px;
+				cursor: pointer;
+				user-select: none; 
+			}
+			#next {
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slider">
+			<div id="prev" onclick="prev()">&#8592;</div>
+			<div id="next" onclick="next()">&#8594;</div>
+		</div>
+		
+		<script>
+			var sekil = 1;
+			var n = 9;
+			show();
+			setInterval(next, 3000)
+		
+			function next() {
+				if (sekil < n) sekil++; else sekil = 1;
+				show();
+			}
+		
+			function prev() {
+				if (sekil >1) sekil--; else sekil = n;
+				show();
+			}
+			
+			function show() {
+				document.getElementById("slider").style.backgroundImage =
+					"url('img/" + sekil + ".jpg')";
+			}
+			
+		</script>
+	</body>
+</html>

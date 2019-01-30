@@ -1,0 +1,98 @@
+body {
+    font-family: Arial;
+	margin: 0;
+}
+
+h1{
+  text-align: center;
+  color: #1e1e1e;
+  text-shadow: 1px 1px 3px black;
+  background: yellow;
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+}
+
+ul{
+   height: 10px;
+   list-style: none;
+   background: lime;
+   padding: 0;
+
+
+}
+
+p{ 
+ background: silver;
+}
+
+#epirgaph{
+ font-style: italic;
+ letter-spacing: 5px;
+ text-align: right;
+ margin: 0 0 0 50%;
+ clear: left;
+}
+
+.odd{
+color: red;
+}
+
+.even{
+color: blue;
+}
+
+li.odd {
+ font-weight: bold;
+}
+
+li.even {
+ font-weight: italic;
+}
+
+a{
+ font: bold 1.2em Arial;
+ color: white;
+ text-decoration: none;
+ background: orange;
+ display: block;
+ padding: 11px;
+ margin: 5px;
+ text-align: center;
+ border-radius: 5px;
+ box-shadow: 1px 1px 2px black;
+ width: 150px;
+ float: left;
+}
+
+a:hover{
+background: white;
+color: orange;
+}
+
+a:active{
+background: white;
+color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

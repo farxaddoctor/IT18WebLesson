@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>JavaScript Introduction</title>
+	</head>
+	<body>
+		<input id="a" type="text" />
+		<button onclick="greeting()"><==></button>
+		<input id="b" type="text" />
+	
+		<script>
+			function greeting() {
+				x = document.getElementById("a").value;
+				document.getElementById("a").value = document.getElementById("b").value;
+				document.getElementById("b").value = x;
+			}
+		</script>
+	</body>
+</html>

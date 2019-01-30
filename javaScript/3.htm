@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>JS Math Operations</title>
+	</head>
+	<body>
+		<input id="a" type="number" /> + 
+		<input id="b" type="number" />
+		<button onclick="sum()"> = </button>
+		<span id="result"></span>
+		
+		<hr />
+		
+		<input id="x" type="number" /> / 
+		<input id="y" type="number" />
+		<button onclick="dev()"> = </button>
+		<span id="result1"></span>
+		
+		<hr />
+		
+		<input id="m" type="number" /> 
+		<select id="scd" >
+			<option >+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input id="n" type="number" />
+		<button onclick="op1()"> = </button>
+		<span id="result2"></span>
+		
+		
+		<script>
+			function sum() {
+				a = Number(document.getElementById("a").value);
+				b = Number(document.getElementById("b").value);
+				c = a + b;
+				document.getElementById("result").innerHTML = c;
+			}
+			function dev() {
+				x = Number(document.getElementById("x").value);
+				y = Number(document.getElementById("y").value);
+				div = Math.floor(x / y);
+				rem = x % y;
+				document.getElementById("result1").innerHTML =
+					div + " reminde " + rem;
+			} 
+			function op(){ 
+			    a = Number(document.getElementById("m").value);
+				b = Number(document.getElementById("n").value);
+				r = document.getElementById("scd").value;
+				 if(r=="+") d=a+b;
+				 else if(r=="-") d=a-b;
+				 else if(r=="/") d=a/b;
+				 else if(r=="*") d=a*b;
+				 document.getElementById("result2").innerHTML=d;
+			}
+			function op1(){ 
+			    m = document.getElementById("m").value;
+				n = document.getElementById("n").value;
+				o = document.getElementById("scd").value;
+				text = eval(m + o + n);
+				document.getElementById("result2").innerHTML = text;
+			}
+			
+			
+		</script>
+	</body>
+</html>

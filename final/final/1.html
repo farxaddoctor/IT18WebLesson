@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			table td {
+				border: 1px solid black;
+				}
+		</style>
+	</head>
+	<body>
+		
+		<div id="table"></div>
+		<script>
+            var B=[];
+            for(i=1;i<5;i++) {
+                B[i]=[];
+                for(j=1; j<5; j++) {
+                    B[i][j]=i,j;
+
+                }
+            }
+            table="";
+            table=table+"<table>";
+            for(i=1;i<5;i++) {
+                table=table+"<tr>";
+                for(j=1;j<5;j++) {
+                    table=table+'<td>';
+                    table=table+B[j][i]+"</td>";
+                }
+                table=table+"</tr>";
+            }
+            table=table+"</table>";
+            document.getElementById("table").innerHTML=table;
+		</script>
+	</body>
+</html>

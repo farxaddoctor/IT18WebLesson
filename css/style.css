@@ -1,0 +1,82 @@
+body {
+	background: silver;
+	margin: 0;
+}
+div, a {
+	box-sizing: border-box;
+}
+#container {
+	background: yellow;
+	width: 1000px;
+	margin: auto; 	
+}
+#header {
+	background: orange;
+	height: 100px;
+	font: 900 3em Arial;
+	color: white;
+	text-align: center;
+	line-height: 2;
+	text-shadow: 1px 1px 5px black;
+}
+#menu {
+	height: 500px;
+	width: 25%;
+	float: left;
+}
+#content {
+	background: white;
+	min-height: 500px;
+	width: 75%;
+	float: left;
+	/* overflow: auto; */
+	padding: 20px;
+}
+#footer {
+	background: red;
+	height: 40px;
+	clear: both;
+	font: normal .6em Arial;
+	color: white;
+	text-align: center;
+	line-height: 4;
+}
+h1 {
+	font: bold 2em Arial;
+	color: orange;
+	width: 400px;
+	padding: 0 0 10px 0;
+	border-bottom: 2px dashed orange;
+}
+img {
+	width: 300px;
+	float: right;
+	margin: 0 0 0 20px;
+}
+p {
+	font: normal .9em Arial;
+	color: #555;
+	text-align: justify;
+	text-indent: 40px;
+	line-height: 1.5;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+a {
+	font: bold 1.2em Arial;
+	color: white;
+	text-decoration: none;
+	background: orange;
+	display: block;
+	width: 95%;
+	padding: 10px 10px 10px 30px;
+	margin: 5px;
+	border-radius: 10px;
+}
+a:hover {
+	color: orange;
+	background: white;
+	padding: 10px 10px 10px 40px;
+}
